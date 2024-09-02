@@ -18,13 +18,13 @@ export default function DrawerNavigator({ navigation }: Props) {
         name="Home"
         component={Home}
         options={{
-          drawerIcon: ({ size, color }) => (
+          drawerIcon: ({ size, color  }) => (
             <Ionicons name="home-outline" size={size} color={color} />
           ),
         }}
       />
       <Drawer.Screen
-        name="Tabs"
+        name="리스트"
         component={TabNavigator}
         options={{
           headerRight: () => <HeaderButton onPress={() => navigation.navigate('Modal')} />,

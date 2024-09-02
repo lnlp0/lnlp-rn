@@ -13,7 +13,7 @@ export const ScreenContent = ({ title, path, children }: ScreenContentProps) => 
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
       <View style={styles.separator} />
-      <EditScreenInfo path={path} />
+      <EditScreenInfo path={path} title={'니엄마'} description={'입니다.'} />
       {children}
     </View>
   );

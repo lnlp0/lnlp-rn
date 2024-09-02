@@ -1,5 +1,5 @@
 import { ScreenContent } from 'components/ScreenContent';
 
 export default function TabOneScreen() {
-  return <ScreenContent path="screens/one.tsx" title="Tab One" />;
+  return <ScreenContent path="흑인 두창 새끼" title="심서훈" />;
 }

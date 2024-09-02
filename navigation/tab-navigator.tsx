@@ -15,7 +15,7 @@ export default function TabLayout({ navigation }: Props) {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarActiveTintColor: 'black',
+        tabBarActiveTintColor: '#00b5ff',
 
         headerShown: false,
       }}>
@@ -33,6 +33,14 @@ export default function TabLayout({ navigation }: Props) {
         component={Two}
         options={{
           title: 'Tab Two',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <Tab.Screen
+        name="3"
+        component={Two}
+        options={{
+          title: '3o',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
